@@ -1,21 +1,39 @@
-<form id="resourceForm">
-  <input name="title" placeholder="Nom" required>
-  <textarea name="description" placeholder="Description" required></textarea>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Resource Hub</title>
+</head>
+<body>
 
-  <select name="category" required>
-    <option value="scripts">Script</option>
-    <option value="vehicles">Véhicule</option>
-    <option value="mapping">Mapping</option>
-    <option value="clothes">Vêtement</option>
-    <option value="discord">Discord</option>
-    <option value="templates">Template</option>
-  </select>
+  <h1>Ajouter une ressource</h1>
 
-  <input name="author" placeholder="Auteur" required>
-  <input name="image" placeholder="Lien image" required>
-  <input name="download" placeholder="Lien téléchargement" required>
+  <form id="resourceForm">
 
-  <button type="submit">Envoyer</button>
-</form>
+    <input name="title" placeholder="Nom de la ressource" required>
 
-<script src="script.js"></script>
+    <textarea name="description" placeholder="Description" required></textarea>
+
+    <select name="category" required>
+      <option value="scripts">Script</option>
+      <option value="vehicles">Véhicule</option>
+      <option value="mapping">Mapping</option>
+      <option value="clothes">Vêtement</option>
+      <option value="discord">Discord</option>
+      <option value="templates">Template</option>
+    </select>
+
+    <input name="author" placeholder="Auteur" required>
+
+    <input name="image" placeholder="Lien image" required>
+
+    <input name="download" placeholder="Lien téléchargement" required>
+
+    <button type="submit">Envoyer</button>
+
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
