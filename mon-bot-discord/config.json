@@ -1,0 +1,138 @@
+{
+  "bot": {
+    "name": "Bot Complet",
+    "version": "1.0.0",
+    "prefix": "!",
+    "status": "en ligne",
+    "activity": {
+      "type": "WATCHING",
+      "text": "le serveur | /help"
+    }
+  },
+  "colors": {
+    "success": "#00ff00",
+    "error": "#ff0000",
+    "warning": "#ffaa00",
+    "info": "#0099ff",
+    "moderation": "#ff6b6b",
+    "music": "#9b59b6",
+    "economy": "#f1c40f",
+    "logs": "#95a5a6"
+  },
+  "emojis": {
+    "success": "✅",
+    "error": "❌",
+    "warning": "⚠️",
+    "loading": "⏳",
+    "music": "🎵",
+    "moderation": "🔨",
+    "ticket": "🎫",
+    "economy": "💰",
+    "level": "📊",
+    "arrow": "➜"
+  },
+  "permissions": {
+    "owner_only": ["backup", "restore", "eval"],
+    "admin_only": ["config", "setup"],
+    "mod_only": ["kick", "ban", "mute", "warn", "clear"]
+  },
+  "moderation": {
+    "auto_mod": {
+      "enabled": true,
+      "anti_spam": {
+        "enabled": true,
+        "max_messages": 5,
+        "time_window": 5000,
+        "mute_duration": "10m"
+      },
+      "anti_links": {
+        "enabled": true,
+        "whitelist": []
+      },
+      "anti_invite": {
+        "enabled": true,
+        "whitelist": []
+      },
+      "anti_caps": {
+        "enabled": true,
+        "percentage": 70
+      },
+      "anti_mass_mention": {
+        "enabled": true,
+        "max_mentions": 5
+      }
+    },
+    "warn_actions": {
+      "3": "mute_1h",
+      "5": "kick",
+      "7": "ban"
+    }
+  },
+  "music": {
+    "max_queue_size": 100,
+    "default_volume": 50,
+    "max_song_duration": 3600,
+    "leave_on_empty": true,
+    "leave_on_empty_delay": 60000,
+    "filters": ["bassboost", "nightcore", "vaporwave", "8D", "tremolo", "vibrato"]
+  },
+  "economy": {
+    "enabled": true,
+    "currency_name": "Crédits",
+    "currency_symbol": "💎",
+    "daily_amount": 100,
+    "work_min": 50,
+    "work_max": 200,
+    "work_cooldown": 3600000,
+    "starting_balance": 500
+  },
+  "leveling": {
+    "enabled": true,
+    "xp_min": 15,
+    "xp_max": 25,
+    "xp_cooldown": 60000,
+    "level_up_message": true,
+    "level_up_channel": null
+  },
+  "tickets": {
+    "enabled": true,
+    "category_name": "Tickets",
+    "support_role": null,
+    "log_channel": null,
+    "max_tickets_per_user": 1,
+    "auto_close_inactive": true,
+    "inactive_time": 86400000
+  },
+  "logs": {
+    "enabled": true,
+    "channels": {
+      "moderation": null,
+      "messages": null,
+      "members": null,
+      "server": null,
+      "voice": null,
+      "commands": null
+    }
+  },
+  "welcome": {
+    "enabled": false,
+    "channel": null,
+    "message": "Bienvenue {user} sur **{server}** ! Tu es le membre n°{memberCount} 🎉",
+    "embed": true,
+    "auto_role": null
+  },
+  "leave": {
+    "enabled": false,
+    "channel": null,
+    "message": "{user} a quitté le serveur... Au revoir ! 👋"
+  },
+  "reaction_roles": {
+    "enabled": true,
+    "messages": []
+  },
+  "dashboard": {
+    "enabled": true,
+    "port": 3000,
+    "callback_url": "http://localhost:3000/callback"
+  }
+}
